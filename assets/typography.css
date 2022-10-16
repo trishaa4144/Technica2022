@@ -4,7 +4,7 @@
 
 body {
   font-family: sans-serif;
-  background-image: url('sky.png'), url('grass.png'), url('dirt.png');
+  background-image: url('bg1.png');
   background-position: center center;
   background-size: 100% 100%;
 }
@@ -122,6 +122,7 @@ heading {
 #visualize {
   color: #abbba0;
   font-size: 50px !important;
+  background-image: ('grass.png');
 }
 
 #tipsheading {
@@ -138,6 +139,7 @@ heading {
 
 .ageimg {
   max-width: 23%;
+  padding-left: 30px;
 }
 
 #definition-ferret {

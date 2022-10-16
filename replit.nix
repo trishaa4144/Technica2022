@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.heroku
     pkgs.python38Full
   ];
   env = {
