@@ -9,7 +9,7 @@ app.title = "Finance Ferret"
 
 app.layout = html.Div(children=[
   html.Div(
-    id="header",
+    id="header", 
     children=[
       html.Img(src=r'assets/ferret.png', id='header-ferret'),
       html.H1(children='Finance Ferret', id = "title"),
@@ -23,7 +23,7 @@ app.layout = html.Div(children=[
       html.P(
         "A retirement fund allows you to receive income in later years through a portfolio of stock and bonds. When you retire, you will be able to receive income in the form of a pension from this fund."
       ),
-      html.Img(src=r'assets/forward.png', id='definition-ferret')
+      html.Img(src=r'assets/forward.png', className='reveal fade-bottom', id='definition-ferret')
     ]),
   html.Div(id="explanation",
            children=[
@@ -45,7 +45,7 @@ app.layout = html.Div(children=[
       )
     ]),
   html.Div(
-        id="ferret-ages",
+        className='reveal fade-bottom', id="ferret-ages",
         children=[html.Img(src=r'assets/bb.png', className="ageimg"),
                   html.Img(src=r'assets/med.png', className="ageimg"),
                   html.Img(src=r'assets/big.png', className="ageimg")
@@ -98,7 +98,7 @@ app.layout = html.Div(children=[
         "Start as early as you can. Even if youre only setting aside $25, keep investing and saving. You will develop positive money habits."
       )
     ]),
-  html.Img(src=r'assets/left.png', id="leftimg")
+  html.Img(src=r'assets/left.png', className='reveal fade-bottom', id="leftimg")
 ])
 
 

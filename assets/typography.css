@@ -4,11 +4,49 @@
 
 body {
   font-family: sans-serif;
-  background-image: url('bg1.png');
+  background-image: url('bg.png');
   background-position: center center;
   background-size: 100% 100%;
 }
 
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .slider-p {
   color: #abbba0;
   font-size: 20px !important;
@@ -52,7 +90,7 @@ heading {
 
 .parallax {
   /* The image used */
-  background-image: url("grass.png");
+  background-image: url("");
 
   /* Set a specific height */
   min-height: 500px; 
