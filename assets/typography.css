@@ -116,7 +116,6 @@ heading {
   padding-right: 10%;
   padding-left: 10%;
   padding-top: 130px;
-  padding-bottom: 200px;
   color: #abbba0;
 }
 
@@ -143,4 +142,17 @@ heading {
 
 #definition-ferret {
   width: 30%;
+}
+
+#leftimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding-bottom: 200px;
+}
+
+#explanation {
+  padding-right: 12%;
+  padding-left: 12%;
 }

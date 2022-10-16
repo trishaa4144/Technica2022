@@ -29,9 +29,9 @@ app.layout = html.Div(children=[
            children=[
              html.H1(children="Types of Retirement Funds"),
              html.H2(children="401K"),
-             html.P(children="description"),
+             html.P(children="A 401(k) plan is an employer-sponsored pension account. If it is a Roth IRA, you are contributing after-tax money, so when you withdraw it, it will have already been taxed. Your employer may match your contributions with a 401k, in which case it is best to maximize those benefits."),
              html.H2(children="IRA"),
-             html.P(children="IRA stands for Individual Retirement Account.")
+             html.P(children="IRA stands for Individual Retirement Account and does not have to be company sponsored. Similar to a Roth 401k, a Roth IRA involves contributing after-tax money.")
            ]),
   html.Div(
     id="early",
@@ -97,7 +97,8 @@ app.layout = html.Div(children=[
       html.P(
         "Start as early as you can. Even if youre only setting aside $25, keep investing and saving. You will develop positive money habits."
       )
-    ])
+    ]),
+  html.Img(src=r'assets/left.png', id="leftimg")
 ])
 
 
@@ -119,7 +120,8 @@ def update_401k(age, monthly):
   fig2.update_layout(title="Retirement Savings",
                      title_x=0.5,
                      xaxis_title="Years from Today",
-                     yaxis_title="Savings (USD)")
+                     yaxis_title="Savings (USD)",
+                     template="plotly_dark")
   return [fig2]
 
 
