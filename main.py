@@ -12,7 +12,7 @@ app.layout = html.Div(children=[
     children = [
       html.H1(children='Finance Ferret'),
       html.Img(src=r'assets/ferret.jpg', id='header-ferret'),
-      html.P("Hello, intro", id='intro-text')
+      # html.P("Hello, intro", id='intro-text')
     ]),
   html.Div(
     id = "intro",
