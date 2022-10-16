@@ -1,19 +1,19 @@
-function fade() {
-  var fades = document.querySelectorAll(".fade")
-  for (var i = 0; i < fades.length; i++) {
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
-    var elementTop = fade[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+    console.log(windowHeight);
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    console.log(elementTop);
+    var elementVisible = 0;
+
     if (elementTop < windowHeight - elementVisible) {
-      fade[i].classList.add("active");
+      reveals[i].classList.add("active");
     } else {
-      fade[i].classList.remove("active");
+      reveals[i].classList.remove("active");
     }
   }
 }
 
-window.addEventListener("scroll", fade);
-
-
-
-
+window.addEventListener("scroll", reveal);

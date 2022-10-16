@@ -11,8 +11,8 @@ app.layout = html.Div(children=[
   html.Div(
     id="header",
     children=[
-      html.H1(children='Finance Ferret'),
       html.Img(src=r'assets/ferret.png', id='header-ferret'),
+      html.H1(children='Finance Ferret', id = "title"),
       html.P(
         "Hello! My name is Finance Ferret, and I'm here to help you make smarter financial decisions! Today we'll be covering investment strategies for young adults, specifically in investing in a Retirement Portfolio!", id='header-text')
     ]),
@@ -21,16 +21,16 @@ app.layout = html.Div(children=[
     children=[
       html.H1(children="What is a Retirement Fund?"),
       html.P(
-        "A retirement fund allows you to receive income in later years through a portfolio of stock and bonds."
+        "A retirement fund allows you to receive income in later years through a portfolio of stock and bonds. When you retire, you will be able to receive income in the form of a pension from this fund."
       ),
-      html.Img(src=r'assets/ferret.jpg', id='definition-ferret')
+      html.Img(src=r'assets/forward.png', id='definition-ferret')
     ]),
   html.Div(id="explanation",
            children=[
              html.H1(children="Types of Retirement Funds"),
-             html.H3(children="401K"),
+             html.H2(children="401K"),
              html.P(children="description"),
-             html.H3(children="IRA"),
+             html.H2(children="IRA"),
              html.P(children="IRA stands for Individual Retirement Account.")
            ]),
   html.Div(
@@ -42,13 +42,18 @@ app.layout = html.Div(children=[
       ),
       html.P(
         "Compounding is the ability to grow an investment by reinvesting the earnings. It allows investors to accrue wealth over time; based on a 5% interest rate a $10,000 investment at age 20 would grow to over $70,000 by age 60."
-      ),
-      html.Img(src=r'assets/ferretages.jpg', id='ferret-ages')
+      )
     ]),
+  html.Div(
+        id="ferret-ages",
+        children=[html.Img(src=r'assets/bb.png', className="ageimg"),
+                  html.Img(src=r'assets/med.png', className="ageimg"),
+                  html.Img(src=r'assets/big.png', className="ageimg")
+                 ]),
   html.Div(id="sliders",
            children=[
-             html.H1(children="Visualize Your Savings"),
-             html.P(children="Your current age: "),
+             html.H1(children="Visualize Your Savings", id="visualize"),
+             html.P(children="Your current age: ", className="slider-p"),
              dcc.Slider(18,
                         65,
                         value=20,
@@ -58,7 +63,7 @@ app.layout = html.Div(children=[
                           "placement": "bottom",
                           "always_visible": True
                         }),
-             html.P(children="Estimated monthly contribution (USD): "),
+             html.P(children="Estimated monthly contribution (USD): ", className="slider-p"),
              dcc.Slider(10,
                         10000,
                         value=200,
@@ -67,13 +72,15 @@ app.layout = html.Div(children=[
                         tooltip={
                           "placement": "bottom",
                           "always_visible": True
-                        })
+                        }),
+             html.Br()
            ]),
   html.Div(id="graph", children=[dcc.Graph(id='401k', figure={})]),
+  html.P(id="descr", children="As you can see, investing in a retirement fund has much better returns long term than keeping it in a savings account. Don't keep money sitting around! (except for an emergency fund)"),
   html.Div(
     id="tips",
     children=[
-      html.H1(children="Tips for Investing"),
+      html.H1(children="Tips for Investing", id="tipsheading"),
       html.H4(children="1. Diversify your portfolio"),
       html.P(
         "Don't put all your eggs in one basket. Diversify your investments, so if one goes south, you have others to fall back on."
@@ -88,7 +95,7 @@ app.layout = html.Div(children=[
       ),
       html.H4(children="4. Start now, start somewhere"),
       html.P(
-        "Start as early as you can, even if youre only setting aside $25, keep investing and saving, it will develop positive money habits in you."
+        "Start as early as you can. Even if youre only setting aside $25, keep investing and saving. You will develop positive money habits."
       )
     ])
 ])
