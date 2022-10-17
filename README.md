@@ -32,10 +32,8 @@ We learned how to develop an interactive website from the front end, to the back
 
 We plan to add information and data visualizers for other safe investment options users can choose if they find that the options currently shown on our site are not suitable for their financial goals. Such options would include U.S. saving bonds and certificates of deposit(CD’s). This will help personalize their investment-learning experience as there are more options they can consider.
 ## Built With
-- css
-- dash
-- html
-- javascript
+- Python
+- Dash
+- HTML/CSS
+- JavaScript
 - numpy
-- python
-
