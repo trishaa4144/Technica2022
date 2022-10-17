@@ -1,6 +1,7 @@
 # Finance Ferret
 
 Collaborators: Trisha Anand, Vivian Howe, Jamie Jung
+
 View it live!: https://technica2022.trishaa.repl.co/
 
 Devpost submission: https://devpost.com/software/finance-ferret
