@@ -6,6 +6,7 @@ View it live!: https://technica2022.trishaa.repl.co/
 
 Devpost submission: https://devpost.com/software/finance-ferret
 
+![Logo][https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/257/159/datas/original.jpeg]
 
 ## Inspiration
 
