@@ -36,4 +36,4 @@ We plan to add information and data visualizers for other safe investment option
 - Dash
 - HTML/CSS
 - JavaScript
-- numpy
+- NumPy
